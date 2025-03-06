@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Streaming Profile Selector</title>
+    <script src="popup.js" defer></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            width: 250px;
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px;
+            transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+        h2, p, label {
+            transition: color 0.3s ease-in-out;
+        }
+        select, input, button {
+            width: 100%;
+            padding: 8px;
+            font-size: 14px;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+            transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+        select {
+            background: #303030;
+            color: white;
+            margin-bottom: 10px;
+            appearance: none;
+        }
+        input {
+            background: #303030;
+            color: white;
+            text-align: center;
+        }
+        button {
+            cursor: pointer;
+            transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+            margin-top: 10px;
+        }
+        #save, #delete {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2>Select Default Profile</h2><br>
+    <p>Choose your streaming service and enter your preferred profile name.</p><br>
+    <select id="service">
+        <option value="netflix">Netflix</option>
+        <option value="crunchyroll">Crunchyroll</option>
+        <option value="disneyplus">Disney+</option>
+    </select>
+    <input type="text" id="profileName" placeholder="Enter profile name">
+    <button id="save">Save</button>
+    <button id="delete">Delete</button>
+</body>
+</html>
